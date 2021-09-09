@@ -1,46 +1,53 @@
 
 <!DOCTYPE html>
-<html>
+<html class=wrapper>
     <head>
         <title>Vi Le Lab 1: Intro to HTML</title>
         <link rel='stylesheet' href='styles.css'/>
     </head>
+
     <body>
-        <h1>Vi Le Lab 1: Intro to HTML</h1>   
-        <nav><a href="selectors.html">Selectors</a></nav>
-        <nav><a href="index.html">Main Page</a></nav>
-        <h2>First Part</h2>
-        <p>You need the following to build your website</p>
-        <ul>
-            <li>HTML and CSS</li>
-            <li>Javascript</li>
-            <li>Node.js</li>
-        </ul>
-        <p>Here are my favorite albums</p>
-        <ol>
+        <h1 class=title>Vi Le Lab 1: Intro to HTML</h1>   
+        <nav><a href="selectors.html">Selectors</a>  <a href="index.html">Main Page</a></nav>
+        <h2 class=subtitle>First Part</h2>
+            <p class=default>You need the following to build your website</p>
+            <div class=section_1>
+            <ul>
+                <li>HTML and CSS</li>
+                <li>Javascript</li>
+                <li>Node.js</li>
+            </ul>
+        <ol> <p>Here are my favorite albums</p>
             <li> Jinsei x Boku = by One Ok Rock</li>
             <li> Prelude to War by The Family Crest </li>
             <li> Multisensory Aesthetic Experience by mae</li>
             <li> Ambitious by Superfly</li>
             <li> Beacon by Two Door Cinema Club</li>
         </ol>
-        <h2>Let's try some inline elements</h2>
-        <p>Sometimes you want to <em>draw attention</em> to something in a line of text</p>
-        <p>Sometimes you want to <strong>strongly emphasize something</strong> in the text</p>
-        <p>Sometimes you want to <em><strong>do both</strong></em></p>
+    </div>
+    <div class=section_2>
+        <h2 class=subtitle>Let's try some inline elements</h2>
+        <p class=default>Sometimes you want to <em>draw attention</em> to something in a line of text</p>
+        <p class=default>Sometimes you want to <strong>strongly emphasize something</strong> in the text</p>
+        <p class=default>Sometimes you want to <em><strong>do both</strong></em></p>
+    </div>
 
-        <h3>Empty Elements</h3>
-        <p>Soft line breaks can't wrap anything.<br/>
+        <h3 class=section_3>Empty Elements</h3>
+        <p class=default>Soft line breaks can't wrap anything.<br/>
          Neither can image tags, or hard lines.<br/>
          Add a hard line under here, and break the previous two lines using a soft line break<hr/></p>
          
-         <h2>Images</h2>
-         <p>Include the four images in the /images folder below</p>
-         <p>Don't forget to use alt text on your images. It's important for accessibility</p>
+         <div class=section_4>
+         <h2 class=subtitle>Images</h2>
+         <p class=text>Include the four images in the /images folder below</p>
+         <p class=text>Don't forget to use alt text on your images. It's important for accessibility</p>
+         <div class=carousel>
+             <div class=slides>
          <img src='images/mochi.jpg' alt = 'A mochi ball in a bubble'/> 
          <img src='images/mochi.png' alt = 'A mochi ball'/> 
          <img src='images/mochi.svg' alt = 'A mochi ball with Bézier handles'/> 
-         <img src='images/mochi.gif' alt = 'A dancing mochi ball'/>
+         <img src='images/mochi.gif' alt = 'A dancing mochi ball'/></div></div>
+         </div>
          <hr/>
          <a href = 'https://github.com/vihtle/INST377-Lab-Work'>My github repository</a>
     </body>
