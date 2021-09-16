@@ -28,16 +28,17 @@
     border: 1px solid #fff;  /* For debugging */
     display: flex;
     justify-content: flex-end;
+    margin-left:auto;
+    color:white;
   }
-
-  .database-demo{
-    margin-left: 550px;
-    border-left: 1px solid white;
-  }
-
   .database-demo a, .main-page a {
     color: white;
   }
+
+  .database-demo{
+    margin-right:20px;
+  }
+
 
   .header-container {
     color: #5995DA;
