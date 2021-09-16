@@ -26,13 +26,17 @@
 
   .links {
     border: 1px solid #fff;  /* For debugging */
-    color: white;
     display: flex;
     justify-content: flex-end;
   }
 
-  .login {
-    margin-left: 20px;
+  .database-demo{
+    margin-left: 550px;
+    border-left: 1px solid white;
+  }
+
+  .database-demo a, .main-page a {
+    color: white;
   }
 
   .header-container {
@@ -103,6 +107,3 @@
 }
 
 
-  .signup a {
-    color: white;
-  }
