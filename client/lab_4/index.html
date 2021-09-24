@@ -6,7 +6,6 @@
       content='width=device-width, initial-scale=1.0, maximum-scale=.50'/>
     <title>Some Web Page</title>
     <link rel='stylesheet' href='styles.css'/>
-    <script src = script.js> </script>
   </head>
   <body>
     <div class='topbar'>
@@ -34,10 +33,10 @@
       <div class='photo-grid-container'>
         <div class='photo-grid'>
           <div class = "carousel">
-          <div class='photo-grid-item first-item carousel_item'>
+          <div class='photo-grid-item first-item carousel_item visible'>
             <img src='images/one.svg'/>
           </div>
-          <div class='photo-grid-item carousel_item'>
+          <div class="photo-grid-item carousel_item">
             <img src='images/two.svg'/>
           </div>
           <div class='photo-grid-item carousel_item'>
@@ -50,11 +49,11 @@
             <img src='images/five.svg'/>
           </div>
         </div>
-        </div>
-        <div class = "carousel_actions">
-          <button id="carousel_button_prev">prev</button>
-          <button id="carousel_button_next">next</button>
-        </div>
+      </div>
+      <div class = "carousel_actions">
+        <div class=left><button id="carousel_button_prev">prev</button></div>
+        <div class=right><button id="carousel_button_next">next</button></div>
+      </div>
       </div>
 
       <div class='footer'>
@@ -63,6 +62,6 @@
         <div class='footer-item footer-three'> footer item 3</div>
       </div>
       
-      
+      <script src = script.js></script>
   </body>
 </html>

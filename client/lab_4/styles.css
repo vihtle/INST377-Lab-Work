@@ -111,4 +111,43 @@
   width: 300px;
 }
 
+.carousel{
+  overflow:hidden;
+  max-width: 600px;
+  position:relative;
+}
+
+.carousel .carousel_item, .carousel .carousel_item .hidden{
+  display:none;
+}
+
+.carousel .carousel_item img{
+  width:100%;
+  max-width:600px;
+  height:auto;
+}
+
+.carousel .visible{
+  display:block;
+}
+
+.carousel_actions{
+  display:flex;
+  width:385px;
+  justify-content: space-between;
+  position:absolute;
+  top:570px;
+  transform:translateY(-100%);
+}
+
+.carousel_actions button{
+  border-radius: 50px;
+  border:10px;
+  font-weight:bold;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+
 
