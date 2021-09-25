@@ -17,7 +17,6 @@ document.querySelector('#carousel_button_prev')
           slide.classList.add('hidden');
         }
         slides[slidePosition].classList.add('visible');
-        console.log("hello");
       }
 
     function moveToNextSlide(){
