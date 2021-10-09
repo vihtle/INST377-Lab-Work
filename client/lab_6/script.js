@@ -1,9 +1,13 @@
+
+async function windowActions() {
 const endpoint = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json';
 
-const names = [];
-fetch(endpoint)
-  .then(blob => blob.json())
-  .then(data => names.push(...data));
+
+const request = await fetch(endpoint)
+const names = await request.json()
+// fetch(endpoint)
+//   .then(blob => blob.json())
+//   .then(data => names.push(...data));
 
 function findMatches(wordToMatch, names) {
   return names.filter(info => {
@@ -11,14 +15,11 @@ function findMatches(wordToMatch, names) {
     return info.name.match(regex)
   });
 }
-
-
-
-function displayMatches() {
-  const matchArray = findMatches(this.value, names);
+function displayMatches(event) {
+  const matchArray = findMatches(event.target.value, names);
   const html = matchArray.map(info => {
-    const regex = new RegExp(this.value, 'gi');
-    const resName = info.name.replace(regex, `<span class="hl">${this.value}</span>`);
+    const regex = new RegExp(event.target.value, 'gi');
+    const resName = info.name.replace(regex, `<span class="hl">${event.target.value}</span>`);
     return `
       <li>
         <div class="name">${resName}</div>
@@ -35,4 +36,6 @@ const searchInput = document.querySelector('.search');
 const suggestions = document.querySelector('.suggestions');
 
 searchInput.addEventListener('change', displayMatches);
-searchInput.addEventListener('keyup', displayMatches);
+searchInput.addEventListener('keyup', (evt) => { displayMatches(evt) });
+}
+window.onload = windowActions;
